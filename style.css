@@ -4,50 +4,91 @@
     box-sizing: border-box;
 }
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(253, 254, 255);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .main-container {
-    width: 70%;
+    width: 75%;
     max-width: 1000px;
     min-height: 100px;
     background-color: rgb(245, 239, 231);
     margin: 20px 0px;
     display: grid;
-    grid-template-columns: 1.5fr 4fr;
+    grid-template-columns: 1.7fr 4fr;
     box-shadow: 0px 10px 40px 0px rgb(0 0 0 / 30%);
 }
 .left-container {
     position: initial;
-    background-color: #404042;
+    background-color: #ffffff;
     color: #ffffff;
-  
+    padding: 20px;
 }
+
+.left-container li{
+    list-style-type: none;
+    padding-bottom: 10px;
+    min-width: 200px;
+}
+
 .right-container {
     position: initial;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 20px 60px 20px 40px;
   
 }
-.Contact, .Skills, .Language, .Hobbies, .title, 
-.Summary, .Experience, .Education, .project {
-    margin-bottom: 30px;
+
+.right-container li{
+    list-style-type: none;
+} 
+
+.image {
+    border: 2px solid #404043;
+    height: 450px;
+    text-align: center;
+    color:#404043;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}  
+
+.image img{
+    border-radius: 50%;
 }
 
-.image{
-    background-color: #ffffff;
+.contact, .skills, .language, .hobbies{
+    background-color: #404043;
+    padding: 20px 0px 20px 20px;
 }
 
-.corner{
-    height: 30px;
-    border-radius: 0px 30px 0 0;
-    background-color: #404042;
-    position: relative;
-    top: -30px;
+.summary, .experience, .education, .project{
+    margin-bottom: 20px;
 }
 
-.h2 {
-    background-color: rgb(4, 96, 150);
+.left-container h2{
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 10px;
+}
+
+.right-container h2{
+    border-bottom: 2px solid #404043;
+    margin-bottom: 10px;
+}
+
+.under-foto{
+    padding-top: 50px;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.name{
+    font-size: 26px;
+}
+
+.last-name{
+    font-size: 36px;
+    border-bottom: 2px solid #404043;
+    margin-bottom: 5px;
 }
