@@ -34,11 +34,10 @@ body {
 }
 
 .right-container {
-    position: initial;
+    position: relative;
     background-color: #ffffff;
     padding: 20px 60px 20px 40px;
     line-height: 1.5;
-    position: relative;
 }
 
 .right-container li{
@@ -99,21 +98,46 @@ body {
 }
 
 .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     position: absolute;
     bottom: 20px;
-    width: 100%;
+    width: 85%;
 }
 
-.footer-div{
-    float: left;
-    width: 33%;
+.my-github{
+    text-align: left;
     line-height: 40px;
-    text-align: center;
+}
+
+.my-github a{
+    text-decoration: none
 }
 
 .my-github img{
     float: left;
+    margin-right: 5px;
 }
+
+.my-github p{
+    color: #000000;
+}
+
+.year{
+    text-align: center;
+    line-height: 40px;
+}
+
+.rsschool{
+    text-align: right;
+}
+
+@media (max-width: 1024px){
+    .my-github p{
+        font-size: 12px;
+    }
+}
+
 
 @media (max-width: 860px) {
 
