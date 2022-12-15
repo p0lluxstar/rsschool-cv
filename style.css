@@ -10,6 +10,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+h1{
+    border-bottom: 2px solid #404043;
+    margin-bottom: 5px;
+}
+
 .main-container {
     width: 75%;
     max-width: 1000px;
@@ -68,7 +74,9 @@ body {
 
 .left-container h2{
     border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
     margin-bottom: 10px;
+    line-height: 30px;
 }
 
 .right-container h2{
@@ -76,21 +84,11 @@ body {
     margin-bottom: 10px;
 }
 
-.under-foto{
+.name{
     padding-top: 50px;
     text-align: left;
     padding-left: 20px;
     padding-bottom: 20px;
-}
-
-.name{
-    font-size: 26px;
-}
-
-.last-name{
-    font-size: 36px;
-    border-bottom: 2px solid #404043;
-    margin-bottom: 5px;
 }
 
 .experience ul{
@@ -149,3 +147,18 @@ body {
         box-shadow: none;
     }
   }
+
+  .main img{
+    float: left;
+    margin-right: 5px;
+  }
+
+.right-container h2{
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+
+.summary img, .experience img, .education img, .code-example img{
+    float: left;
+    margin-right: 5px;
+}
