@@ -68,6 +68,12 @@ h1{
     padding: 20px 0px 20px 20px;
 }
 
+.contact a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
 .summary, .experience, .education, .code-example{
     margin-bottom: 20px;
 }
@@ -85,7 +91,7 @@ h1{
 }
 
 .name{
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: left;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -108,16 +114,21 @@ h1{
     line-height: 40px;
 }
 
-.my-github a{
-    text-decoration: none
+.my-github a, .project a{
+    text-decoration: none;
 }
+
+.my-github a:hover, .project a:hover, .contact a:hover{
+    text-decoration: underline;
+}
+
 
 .my-github img{
     float: left;
     margin-right: 5px;
 }
 
-.my-github p{
+.my-github a, .project a{
     color: #000000;
 }
 
@@ -129,6 +140,23 @@ h1{
 .rsschool{
     text-align: right;
 }
+
+.main img{
+    float: left;
+    margin-right: 5px;
+  }
+
+.right-container h2{
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+
+.summary img, .experience img, .education img, .code-example img, .project img{
+    float: left;
+    margin-right: 5px;
+}
+
+/* ****************************************************** */
 
 @media (max-width: 1024px){
     .my-github p{
@@ -147,18 +175,3 @@ h1{
         box-shadow: none;
     }
   }
-
-  .main img{
-    float: left;
-    margin-right: 5px;
-  }
-
-.right-container h2{
-    line-height: 30px;
-    padding-bottom: 5px;
-}
-
-.summary img, .experience img, .education img, .code-example img{
-    float: left;
-    margin-right: 5px;
-}
