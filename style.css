@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(253, 254, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    border-bottom: 2px solid #404043;
+    margin-bottom: 5px;
+}
+
+.main-container {
+    width: 75%;
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: rgb(245, 239, 231);
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: 1.7fr 4fr;
+    box-shadow: 0px 10px 40px 0px rgb(0 0 0 / 30%);
+}
+.left-container {
+    position: initial;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.left-container li{
+    list-style-type: none;
+    padding-bottom: 10px;
+    min-width: 200px;
+}
+
+.right-container {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px 60px 20px 40px;
+    line-height: 1.5;
+}
+
+.right-container li{
+    list-style-type: none;
+} 
+
+.image {
+    border: 2px solid #404043;
+    height: 450px;
+    text-align: center;
+    color:#404043;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}  
+
+.image img{
+    border-radius: 50%;
+}
+
+.contact, .skills, .language, .hobbies{
+    background-color: #404043;
+    padding: 20px 0px 20px 20px;
+}
+
+.contact a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.summary, .experience, .education, .code-example{
+    margin-bottom: 20px;
+}
+
+.left-container h2{
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.right-container h2{
+    border-bottom: 2px solid #404043;
+    margin-bottom: 10px;
+}
+
+.name{
+    padding-top: 30px;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.experience ul{
+    margin-bottom: 20px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    bottom: 20px;
+    width: 85%;
+}
+
+.my-github{
+    text-align: left;
+    line-height: 40px;
+}
+
+.my-github a, .project a{
+    text-decoration: none;
+}
+
+.my-github a:hover, .project a:hover, .contact a:hover{
+    text-decoration: underline;
+}
+
+
+.my-github img{
+    float: left;
+    margin-right: 5px;
+}
+
+.my-github a, .project a{
+    color: #000000;
+}
+
+.year{
+    text-align: center;
+    line-height: 40px;
+}
+
+.rsschool{
+    text-align: right;
+}
+
+.main img{
+    float: left;
+    margin-right: 5px;
+  }
+
+.right-container h2{
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+
+.summary img, .experience img, .education img, .code-example img, .project img{
+    float: left;
+    margin-right: 5px;
+}
+
+/* ****************************************************** */
+
+@media (max-width: 1024px){
+    .my-github p{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 860px) {
+
+    body{
+        justify-content: normal;
+    }
+    
+    .main-container{
+        box-shadow: none;
+    }
+  }
